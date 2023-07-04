@@ -1,8 +1,10 @@
 import React from 'react';
+import { useAuth } from "react-oidc-context"
 
 
 const Secured = () => {
-
+    const auth = useAuth()
+  //  console.log(auth);
     return (
         <div>
             <h1 className="text-black text-4xl">Welcome to the Protected Page.</h1>
